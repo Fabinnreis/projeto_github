@@ -1,12 +1,12 @@
 class RepositorioGit{
-    constructor(nomeRepo, urlRepo){
-        this._nomeRepo = nomeRepo;
+    constructor(nomeProjRepo, urlRepo){
+        this._nomeProjRepo = nomeProjRepo;
         this._urlRepo = urlRepo;
     }
 
     retornaRepoGit(){
         return {
-            nomeRepo: this._nomeRepo,
+            nomeProjRepo: this._nomeProjRepo,
             urlRepo: this._urlRepo
         }
     };

@@ -1,6 +1,9 @@
 let inputUsuario = document.querySelector('#inputUsuario');
 let retornoRepo = document.querySelector('#retornoRepo');
 let btnEnvio = document.querySelector('#btnBusca');
+
+
+
 let usu = "";
 
 btnEnvio.addEventListener("click", ()=>{
@@ -13,4 +16,5 @@ btnEnvio.addEventListener("click", ()=>{
     }
     
 });
+
 
