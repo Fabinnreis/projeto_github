@@ -10,7 +10,6 @@ class RepositorioGitController{
             let retornoJSON = JSON.parse(requisicao.responseText);
             for(let item of retornoJSON){
                 let montaReq = new RepositorioGit(item.name, item.html_url);
-                let retornaRepositorioGit = document.querySelector('#listaRepo');
             retornaRepositorioGit.innerHTML += RepositorioGitView.templateRepositorioGit(montaReq.retornaRepoGit());
                 console.log(montaReq.retornaRepoGit());
             };

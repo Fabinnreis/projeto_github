@@ -8,7 +8,7 @@ class UsuarioGitController{
         requisicao.open("GET", `https://api.github.com/users/${usu}`);
         requisicao.addEventListener("load", ()=>{
             let retornoJSON = JSON.parse(requisicao.responseText);
-            let montaUsu = new UsuarioGit(retornoJSON.avatar_url, retornoJSON.login, retornoJSON.repos_url);
+            let montaUsu = new UsuarioGit(retornoJSON.avatar_url, retornoJSON.login, retornoJSON.repos_url, retornoJSON.html_url);
             let retornaUsuarioGit = document.querySelector('#retornoUsuGit');
             retornaUsuarioGit.innerHTML = UsuarioGitView.templateUsuarioGit(montaUsu.retornaUsuarioGit());
         })

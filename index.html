@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Github</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/posicionamento.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <input type="text" id="inputUsuario">
-    <button id="btnBusca">Buscar</button>
-    <div id="retornoUsuGit"></div>
+    <div class="header flex justifyCenter">
+        <h1 class="textCenter">Projeto Usuário Github</h1>
+    </div>
+    <div class="buscaUsuario flex justifyCenter">
+        <input type="text" id="inputUsuario" placeholder="Insira um usuário aqui">
+        <button id="btnBusca">Buscar</button>
+    </div>
+    
+    <div id="retornoUsuGit" class="flex wrap"></div>
     <div id="retornoRepo"></div>
-
+    <ul id="listaRepo" class="flex wrap textCenter"></ul>
+    
     <script src="srcs/models/UsuarioGit.js"></script>
     <script src="srcs/models/RepositorioGit.js"></script>
     <script src="srcs/views/UsuarioGitView.js"></script>
